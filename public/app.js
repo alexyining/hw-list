@@ -19,6 +19,12 @@ app.factory('Homework', function() {
 			url: 'https://github.com/alexyining/flashcards-day2',
 			status: 'completed'
 		}
+
+		{
+			assignment: 'Final Assessment',
+			url: 'https://github.com/alexyining/hw-list',
+			status: 'completed'
+		}		
 	];
 
 	return data;
