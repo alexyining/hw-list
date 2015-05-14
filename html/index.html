@@ -7,22 +7,22 @@
     </head>
     
     <body>
-        <!-- angular app -->
     		
-		<div class='each-hw' ng-app='HwList' ng-controller='MainController'>
-            <ul ng-controller='HwController' ng-repeat='hw in hwlist'>
-                
-                <li ng-click="click()">
-                   	{{ hw.assignment }}
+  		<div class='each-hw' ng-app='HwList' ng-controller='MainController'>
+        <ul ng-controller='HwController' ng-repeat='hw in hwlist'>
+          <li ng-click="click()">
+             	{{ hw.assignment }}
 
-                   	<ul ng-show='clicked'> 
-                   		<li> URL: <a href={{hw.url}}>github</a> </li>
-                   		<li> Status: {{ hw.status}} </li>
-                   	</ul>
-                </li>
+             	<ul ng-show='clicked'> 
+             		<li> URL: <a href={{hw.url}}>github</a> </li>
+             		<li> Status: {{ hw.status}} </li>
+             	</ul>
+          </li>
+        </ul>
+      </div>
 
-            </ul>
-        </div>
-
+      <div class='about-page'>
+        <a href="/about">About</a>
+      </div>
     </body>
 </html>
