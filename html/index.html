@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <head>
+        <title>CS3101 Final Assessment</title>
+    </head>
+    
+    <body>
+        <!-- angular app -->
+    	<div ng-app='HwList' ng-controller="MainController">
+
+            <ul>
+                <li class="each hw" ng-repeat="hw in hwlist" ng-click="click()">
+                    {{ answer.text }}
+                </li>
+            </ul>
+
+            <h2 class="detail" ng-show="answered">
+                <span>  hw.data </span>
+            </h2>
+
+
+        </div>
+    </body>
+</html>
