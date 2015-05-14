@@ -8,19 +8,21 @@
     
     <body>
         <!-- angular app -->
-    	<div ng-app='HwList' ng-controller="MainController">
+    		
+		<div class='each-hw' ng-app='HwList' ng-controller='MainController'>
+            <ul ng-controller='HwController' ng-repeat='hw in hwlist'>
+                
+                <li ng-click="click()">
+                   	{{ hw.assignment }}
 
-            <ul>
-                <li class="each hw" ng-repeat="hw in hwlist" ng-click="click()">
-                    {{ answer.text }}
+                   	<ul ng-show='clicked'> 
+                   		<li> URL: <a href={{hw.url}}>github</a> </li>
+                   		<li> Status: {{ hw.status}} </li>
+                   	</ul>
                 </li>
+
             </ul>
-
-            <h2 class="detail" ng-show="answered">
-                <span>  hw.data </span>
-            </h2>
-
-
         </div>
+
     </body>
 </html>
