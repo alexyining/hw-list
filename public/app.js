@@ -18,7 +18,7 @@ app.factory('Homework', function() {
 			assignment: 'Angular Day 2',
 			url: 'https://github.com/alexyining/flashcards-day2',
 			status: 'completed'
-		}
+		},
 
 		{
 			assignment: 'Final Assessment',
